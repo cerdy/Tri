@@ -13,7 +13,7 @@ int  Partition(int tab [],int d,int f)
     { do {i++;}while(tab[i]<pivot);// cette action va etre repété jusqu'a ce qu'on trouve une valeur à gauche supérieur au pivot
       do {j--;}while(tab[j]>pivot);//cette action va etre repété jusqu'a ce qu'on trouve une valeur à droite supérieur au pivot
 
-// après avoir trouver deux valeurs qui encadre le pivot et si leur indice son != (i<j) alors alors on les permutes
+// après avoir trouver deux valeurs qui encadre le pivot et si leur indice son != (i<j) alors on les permutes
       if (i<j)
       {aux=tab[i];
       tab[i]=tab[j];
@@ -25,7 +25,7 @@ int  Partition(int tab [],int d,int f)
 }
 
 
-void tri_rapide(int tab [],int d, int f) //il s'effectue par partitionnement successive suivant un élément appelé                                            //pivot
+void tri_rapide(int tab [],int d, int f) //il s'effectue par partitionnement successive suivant un élément appelé pivot
 { int p;
   if(d>=f){return;} // soi le tableau est nul(n'hexiste pas) soi le tableau à un élément et du coup est trié
       else
@@ -121,7 +121,7 @@ int main()
 {   int n,i,x;
     int tab[100];
 printf("Bienvenu dans ce didacticiel qui r%csume quelques m%cthodes de tri de listes/tableaux.\n",130,130);
-printf("Pour commencer, entrer le nombre d'%cl%cments (taille) de votre tableau :\n",130,130);
+printf("Pour commencer, entrer le nombre d'%cl%cments (taille) de votre tableau (max 100) :\n",130,130);
    scanf("%d",&n);
     while (n<=0){
    printf("erreur: la taille du tableau entrer est incorect\n");
